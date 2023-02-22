@@ -887,18 +887,6 @@ vendor/lib/libqcodec2.so
 vendor/lib64/libmmosal.so
 vendor/lib64/libqcodec2.so
 
-# MDM
-vendor/bin/ks
-vendor/bin/mdm_helper
-vendor/bin/mdm_helper_proxy
-vendor/lib64/libmdmimgload.so
-
-# MDM
-vendor/bin/ks
-vendor/bin/mdm_helper
-vendor/bin/mdm_helper_proxy
-vendor/lib64/libmdmimgload.so
-
 # Mlipay
 vendor/bin/mlipayd@1.1
 vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
@@ -972,6 +960,17 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
+
+# Pasrmanager
+-vendor/app/pasrservice/pasrservice.apk
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
+vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib/vendor.qti.power.pasrmanager@1.0.so
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 
 # Pasrmanager
 -vendor/app/pasrservice/pasrservice.apk
@@ -1488,6 +1487,11 @@ vendor/etc/thermald-devices.conf
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
+
+# Trusted User Interface - from LA.UM.9.1.r1-10600-SMxxx0.0
+vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti|15378114c18fd1b1c8f9671f656396285ad1de48
+vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc|2cfc563d7e1579374f001c94588fae7835a12ffc
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so|938262f1c75299523dc8e5c4e6a793753b209c40
 
 # VPP
 vendor/bin/vppservice
