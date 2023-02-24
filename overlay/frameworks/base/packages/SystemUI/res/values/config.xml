@@ -47,19 +47,15 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">100</integer>
 
-    <!-- Color of the FOD view -->
-    <color name="config_udfpsColor">#ff00fdff</color>
+    <!-- Doze: whether the single tap sensor uses the proximity sensor.
+     If both this parameter and doze_selectively_register_prox are true, registration for the
+     sensor will be delayed when the device first enters dozing but the device has not entered its
+     low powered state yet. -->
+    <bool name="doze_single_tap_uses_prox">false</bool>
 
-    <!-- Location on the screen of the center of the physical power button. -->
-    <dimen name="physical_power_button_center_screen_location_y">950px</dimen>
-
-    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
-    <dimen name="physical_volume_up_button_center_screen_location_y">525px</dimen>
-    <dimen name="physical_volume_down_button_center_screen_location_y">700px</dimen>
-
-    <!-- Location on the screen of the center of the fingerprint sensor. -->
-    <dimen name="physical_fingerprint_sensor_center_screen_location_y">1900px</dimen>
-
-<!-- Whether show refresh rate QS tile -->
-    <bool name="config_showRefreshRateQsTile">true</bool>
+    <!-- Doze: whether the long press sensor uses the proximity sensor.
+     If both this parameter and doze_selectively_register_prox are true, registration for the
+     sensor will be delayed when the device first enters dozing but the device has not entered its
+     low powered state yet. -->
+    <bool name="doze_long_press_uses_prox">false</bool>
 </resources>
